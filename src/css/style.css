@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    margin-bottom: 20px;
+}
+.header__title {
+text-align: center;
+background: red;
+margin-bottom: 20px;
+}
+
+
+.filters {
+    display: flex;
+    justify-content: center;
+    
+}
+.btn {
+    margin-right: 10px;
+    padding: 5px;
+    color: white;
+    background: red;
+    border: 2px solid darkred;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 100px;
+    min-width: 100px;
+    display: inline-block;
+
+}
+.filters p {
+    margin-right: 10px;
+
+}
+.pokemon-container {
+    display: none;
+    flex-wrap: wrap;
+    align-items: space-between;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.pokemon {
+    background-color: #eee;
+    border-radius: 50px;
+    margin: 15px;
+    padding: 25px;
+    text-align: center;
+    border: 3px solid darkred;
+    -webkit-box-shadow: 10px 10px 10px 7px #969394;
+    box-shadow: 10px 10px 10px 7px #969394;
+}
+
+
+.pokemon .img-container {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    background: rgba(77, 79, 80, 0.4)
+}
+
+.pokemon .img-container img {
+    margin-top: 20px;
+    max-width: 90%;
+}
+ul {
+    margin: 0;
+    padding-inline-start: 0;
+}
+li {
+    list-style-type: none;
+    margin: 0;
+}
+li:first-child {
+    font-weight: bold;
+
+}
+
+.btns {
+    display: none;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.pokemon-id {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.pokemon-experience {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.pokemon-name {
+    margin-top: 10px;
+}
+
+.loader {
+    /* display: none; */
+    margin: auto;
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+    animation: example 0.8s infinite alternate
+}
+.loader img {
+    max-height: 100px;
+    max-width: 100px;
+    animation: example 0.8s infinite alternate
+}
+
+@keyframes example {
+  from {
+    max-width: 100px;
+    max-height: 100px;
+    
+  }
+  to {
+    max-width: 200px;
+    max-height: 200px;
+    left: calc(50% - 100px);
+    top: calc(50% - 100px)
+  }
+}
